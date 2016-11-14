@@ -27,3 +27,34 @@
 *.exe
 *.out
 *.app
+## Mozarliker Brasil
+  <Corpo>  
+    <body> 
+<? Php // case-insensitive Nome constante define ( "Cumprimento", "mozarliker Brasil!", True); Saudação eco; ?> 
+    </body>
+      <html> 
+         <Corpo> 
+
+<Forma Método = "post" Ação = "<? Php echo $ _SERVER [ 'PHP_SELF'];>?"> Nome: <entrada tipo = "texto" nome = "fname"> <entrada tipo = "submit"> < / form> 
+
+<? php se ($ _SERVER [ "REQUEST_METHOD"] == "POST") {// Recolher valor do campo de entrada $ name = $ _REQUEST [ 'fname']; se (Vazio ($ name)) {echo "nome ESTÁ Vazio"; } Else {$ Nome eco; }}?> 
+
+<? Php $ servername = "localhost"; $ Username = "username"; $ Password = "password"; $ Dbname = "myDB";
+// Criar uma ligação $ conn = new mysqli ($ servername, $ username, $ password, $ dbname); // Verifique a conexão if ($ conn-> connect_error) {die ( "A ligação falhou:". $ Conn-> connect_error); } 
+  <script>
+$ Sql Server= "SELECT id, nome, sobrenome DE MyGuests"; $ Result = $ conn-> query ($ sql);
+<!$ Sql Server= "php mozarliker.com.br.mysql:3306"/> 
+if ($ resultado-> num_rows> 0) {// Os dados de cada linha de saída while ($ linha = $ result-> fetch_assoc ()) {echo " 
+id:". $ row [ "id"]. "- Nome:". $ row [ "nome"]. "". $ row [ "sobrenome"]. " 
+"; }} Else {echo "0 resultados"; }
+$ Conn-> close ("/*"); ?>
+  </script>
+<html> 
+<Corpo> 
+<? Php $ url = " http://www.mozarliker.com.br"; 
+// Remove todos os Caracteres ilegais A Partir de Uma url $ url = filter_var ($ url, FILTER_SANITIZE_URL); 
+/ / Url Validar se {(filter_var ($ url, FILTER_VALIDATE_URL) === false!) Echo ( "$ url e Um URL válido"); } Else {echo ( "$ url NÃO E UMA URL valida"); }?> <! DOCTYPE html> <html> <Corpo> 
+<A href = "test_get.php? Assunto = PHP e web = Mozarliker Brasil"> Teste GET $ </ a> 
+
+</ Body>
+</ html>
